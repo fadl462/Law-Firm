@@ -175,3 +175,164 @@ img{max-width:100%}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}.image-frame img,.insight-card,.sector,.practice-row,.btn{transition:none}}
+
+/* =========================================================
+   CLEAN / SOFT VISUAL PASS
+   Bright, airy, smooth and intentionally low-noise.
+   ========================================================= */
+:root{
+  --ink:#29242c;
+  --paper:#fffdfb;
+  --cream:#fff8f3;
+  --peach:#f8ded6;
+  --blush:#f3c9c3;
+  --rose:#d28d83;
+  --plum:#654b61;
+  --lav:#eee8f4;
+  --sage:#e7eee7;
+  --gold:#b88952;
+  --muted:#756d73;
+  --line:rgba(41,36,44,.10);
+  --shadow:0 24px 70px rgba(74,54,67,.10);
+  --soft-shadow:0 14px 38px rgba(74,54,67,.07);
+}
+
+body{background:var(--paper)}
+
+/* Header: quiet glass, never visually competes with the page. */
+.header:not(.scrolled){color:var(--ink);padding:20px 0}
+.header:not(.scrolled):after{
+  background:rgba(255,253,251,.72);
+  border-color:rgba(41,36,44,.08);
+  backdrop-filter:blur(18px) saturate(120%);
+  box-shadow:0 8px 28px rgba(74,54,67,.05);
+}
+.header:not(.scrolled) .btn{
+  color:var(--ink);
+  border-color:rgba(41,36,44,.18);
+  box-shadow:none;
+}
+.header:not(.scrolled) .btn:hover{color:var(--ink)}
+.header:not(.scrolled) .menu-btn{color:var(--ink);background:rgba(255,255,255,.72);border-color:rgba(41,36,44,.12)}
+.header.scrolled:after{background:rgba(52,39,50,.94);box-shadow:0 12px 34px rgba(38,26,34,.14)}
+
+/* HERO: replace the full-bleed noisy photograph with a clean architectural reveal. */
+.hero{
+  min-height:92vh;
+  background:linear-gradient(135deg,#fffdfb 0%,#fff8f3 58%,#f8edf0 100%);
+  color:var(--ink);
+  align-items:center;
+}
+.hero:before{
+  content:'';
+  position:absolute;
+  inset:0 0 0 47%;
+  background:
+    linear-gradient(90deg,#fff8f3 0%,rgba(255,248,243,.46) 18%,rgba(255,248,243,0) 48%),
+    linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.16)),
+    url('../images/hero-architecture.png') center/cover no-repeat;
+  mix-blend-mode:normal;
+}
+.hero:after{
+  width:560px;height:560px;right:-240px;top:-160px;
+  background:radial-gradient(circle,rgba(246,194,184,.20),rgba(246,194,184,0) 68%);
+  filter:none;
+}
+.hero-inner{padding:150px 0 80px;z-index:3}
+.hero-copy{max-width:650px}
+.hero .eyebrow{color:var(--gold);margin-bottom:22px}
+.hero h1{text-shadow:none}
+.hero .display{font-size:clamp(62px,7.4vw,108px);line-height:.88;color:var(--ink)}
+.hero .display em{color:#df9a8e}
+.hero p{color:#5f575e;max-width:520px;font-size:15px}
+.hero .btn{background:var(--plum);border-color:var(--plum);color:#fff}
+.hero .btn:hover{background:#513b4e;border-color:#513b4e;color:#fff}
+.scroll{color:var(--plum);right:10px}.scroll span{background:#dca296}
+
+/* Softer promise band. */
+.promise{background:#fff}
+.promise-grid{padding:4px 0}
+.promise-item{padding:24px 38px}
+.promise-icon{width:48px;height:48px;background:#fff7f2;border-color:rgba(210,141,131,.22);box-shadow:none}
+.promise-item p{color:#777077}
+
+/* Clean content surfaces. */
+.section{padding:120px 0}
+.intro-image{height:560px;border-radius:28px;box-shadow:var(--soft-shadow)}
+.intro-image img{filter:brightness(1.13) saturate(.58);}
+.practice-layout{border-color:rgba(41,36,44,.08);border-radius:26px;background:#fff;box-shadow:var(--soft-shadow)}
+.practice-list{background:#fffaf7}
+.practice-row{padding:17px 22px}
+.practice-row:hover,.practice-row.active{background:#fff0ea}
+.practice-row:before{background:#dd998c}
+.practice-panel{min-height:500px}
+.practice-panel-image{background:#eadfd8!important;position:relative}
+.practice-panel-image:after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,243,236,.06),rgba(82,60,70,.08))}
+.practice-panel-copy{background:linear-gradient(145deg,#fffdfb,#fbf0f2)}
+
+/* Statement: one calm colour field, no oversized decorative word/noise. */
+.statement{padding:135px 0;background:linear-gradient(120deg,#5b4258 0%,#73516a 55%,#9a6670 100%)}
+.statement:before{width:520px;height:520px;right:-160px;top:-180px;background:radial-gradient(circle,rgba(255,220,208,.16),transparent 68%);filter:none}
+.statement:after{content:'';width:430px;height:430px;right:-130px;bottom:-240px;border:1px solid rgba(255,255,255,.10);border-radius:50%;background:none;filter:none}
+.statement h2{font-size:clamp(56px,7vw,104px)}
+.statement p{color:#f5e7e5;margin-top:30px}
+
+/* Sectors: warm paper instead of a gradient wash. */
+.sectors{background:#fffaf5}
+.sector-list{margin-top:48px}
+.sector{padding:23px 0;font-size:clamp(30px,3.8vw,56px);color:#39313a}
+.sector:hover{padding-left:14px;color:var(--plum)}
+
+/* Insights: calm editorial blocks instead of abstract/noisy blobs. */
+.insight-card{border-color:rgba(41,36,44,.08);background:#fff;box-shadow:0 8px 28px rgba(74,54,67,.05)}
+.insight-card .thumb{height:205px;background:linear-gradient(135deg,#f3ddd5,#eee5ef)}
+.insight-card .thumb:before{background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,0))}
+.insight-card .thumb:after{display:none}
+.insight-card:hover{box-shadow:var(--soft-shadow)}
+.insight-card-body{padding:24px}
+
+/* CTA: bright, inviting, no recycled hero image. */
+.cta{
+  min-height:430px;
+  background:linear-gradient(120deg,#fff1ea 0%,#f8e8ee 55%,#eee8f4 100%);
+  color:var(--ink);
+}
+.cta:before{display:none}
+.cta:after{width:520px;height:520px;right:-210px;top:-210px;background:radial-gradient(circle,rgba(217,164,154,.14),rgba(217,164,154,0) 68%);filter:none}
+.cta-inner{padding:20px 0}
+.cta .eyebrow{color:var(--gold)}
+.cta h2{color:var(--ink);font-size:clamp(52px,6.7vw,92px)}
+.cta p{color:#665d64}
+.cta .btn{background:var(--plum);border-color:var(--plum);color:#fff}
+.cta .btn:hover{background:#513b4e;border-color:#513b4e;color:#fff}
+
+/* Footer remains deep for contrast, but less harsh than pure black. */
+.footer{background:#2f2631}
+
+/* Inner pages: polished colour blocks with no visual clutter. */
+.page-hero{background:linear-gradient(120deg,#4d394b 0%,#6b4d65 62%,#8e5f69 100%);padding:175px 0 90px}
+.page-hero:after{width:500px;height:500px;right:-190px;top:-180px;background:radial-gradient(circle,rgba(255,220,209,.16),transparent 68%);filter:none}
+
+/* Remove decorative texture from profile placeholders. */
+.person-photo:after{background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(89,55,73,.08))}
+
+/* Mobile: preserve the calm hierarchy and put the image beneath the copy. */
+@media(max-width:900px){
+  .hero{min-height:auto;padding-top:70px}
+  .hero:before{inset:auto 0 0;width:100%;height:42%;background:linear-gradient(180deg,#fff8f3 0%,rgba(255,248,243,.05) 40%),url('../images/hero-architecture.png') center/cover no-repeat;opacity:.88}
+  .hero-inner{padding:125px 0 410px}
+  .hero-copy{max-width:650px}
+  .intro-image{height:460px}
+}
+@media(max-width:600px){
+  .section{padding:86px 0}
+  .hero-inner{padding:118px 0 300px}
+  .hero .display{font-size:56px}
+  .hero:before{height:34%}
+  .promise-item{padding:25px 0!important}
+  .intro-image{height:380px}
+  .statement{padding:95px 0}
+  .statement h2{font-size:56px}
+  .cta{min-height:390px}
+  .page-hero{padding:145px 0 70px}
+}

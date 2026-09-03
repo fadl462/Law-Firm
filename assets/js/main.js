@@ -1,4 +1,6 @@
 const header = document.querySelector('.header');
+const isInnerPage = !!document.querySelector('.page-hero');
+if (header && isInnerPage) header.classList.add('scrolled');
 
 const syncHeader = () => {
   if (header) header.classList.toggle('scrolled', window.scrollY > 32);
