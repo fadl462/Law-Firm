@@ -463,3 +463,130 @@ body{background:var(--paper)}
     background:linear-gradient(180deg,#fffdfb 0%,rgba(255,253,251,.18) 24%,rgba(255,253,251,0) 55%),var(--law-hero) center 36%/cover no-repeat!important;
   }
 }
+
+/* =========================================================
+   HOMEPAGE FINAL POLISH — spacing, alignment & hierarchy
+   ========================================================= */
+body{overflow-x:hidden}
+.header .nav{min-height:58px}
+.logo{line-height:.9}
+.navlinks{gap:28px}
+.navlinks a{white-space:nowrap}
+
+/* Hero: deliberate two-column composition with a clean photographic edge. */
+.hero{min-height:760px;height:min(94vh,900px);display:flex;align-items:center;overflow:hidden}
+.hero-inner{width:100%;padding:148px 0 78px;display:flex;align-items:center;position:relative}
+.hero-copy{width:54%;max-width:650px;position:relative;z-index:4}
+.hero .display{margin:0 0 22px}
+.hero p{margin:0 0 28px}
+.hero-actions{margin-top:4px}
+.hero:before{inset:0 0 0 48%!important;background:linear-gradient(90deg,#fffdfb 0%,rgba(255,253,251,.92) 5%,rgba(255,253,251,.28) 22%,rgba(255,253,251,0) 43%),var(--law-hero) center 38%/cover no-repeat!important}
+.hero:after{content:'';position:absolute;right:0;top:0;bottom:0;width:1px;background:rgba(41,36,44,.05);z-index:3}
+.scroll{bottom:34px}
+
+/* Promise row: equal columns, consistent vertical rhythm. */
+.promise{border-top:1px solid rgba(41,36,44,.055);border-bottom:1px solid rgba(41,36,44,.055)}
+.promise-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.promise-item{min-height:142px;display:flex;flex-direction:column;justify-content:center;padding:28px 34px!important}
+.promise-item+ .promise-item{border-left:1px solid rgba(41,36,44,.075)}
+.promise-icon{width:34px;height:34px;font-size:13px;margin-bottom:13px}
+.promise-item h3{margin:0 0 7px}
+.promise-item p{margin:0;max-width:190px;line-height:1.55}
+
+/* Firm section: text and image sit on the same visual baseline. */
+.intro-grid{grid-template-columns:minmax(280px,.78fr) minmax(420px,1.22fr);gap:86px;align-items:center}
+.intro-copy{padding:12px 0 0}
+.intro-copy h2{max-width:520px;margin:15px 0 18px}
+.intro-copy p{max-width:390px;margin-bottom:28px}
+.intro-image{height:470px;border-radius:20px;overflow:hidden}
+
+/* Practice: tighter header-to-panel relationship and balanced three-part layout. */
+.practice-head,.insights-head{align-items:end;margin-bottom:28px}
+.practice-head h2,.insights-head h2{letter-spacing:-.045em}
+.practice-layout{min-height:430px;grid-template-columns:40% 60%;overflow:hidden}
+.practice-list{border-right:1px solid rgba(41,36,44,.07)}
+.practice-row{min-height:47px;padding:13px 20px;display:grid;grid-template-columns:34px 1fr 18px;align-items:center}
+.practice-panel{min-height:430px;grid-template-columns:55% 45%}
+.practice-panel-image{min-height:430px}
+.practice-panel-copy{padding:44px 34px}
+.practice-panel-copy h3{font-size:clamp(31px,3vw,48px);line-height:.98;letter-spacing:-.04em}
+
+/* Statement: enough breathing room without becoming a dead zone. */
+.statement{padding:112px 0}
+.statement h2{margin:12px 0 0;max-width:780px;letter-spacing:-.055em}
+.statement p{max-width:450px;margin:22px 0 0}
+
+/* Sectors: editorial list with controlled density. */
+.sectors{padding-top:112px;padding-bottom:112px}
+.sectors>.container>h2{max-width:760px;letter-spacing:-.05em}
+.sector-list{margin-top:42px}
+.sector{min-height:70px;padding:16px 0;font-size:clamp(27px,3.25vw,48px);display:flex;align-items:center;justify-content:space-between}
+.sector small{font-family:var(--sans);font-size:9px;letter-spacing:.14em;color:#b6a9ad}
+
+/* Insights: image-first cards, consistent height and copy rhythm. */
+.insights-grid{gap:18px}
+.insight-card{overflow:hidden;border-radius:14px}
+.insight-card .thumb{height:220px}
+.insight-card-body{min-height:168px;padding:20px 21px 22px;display:flex;flex-direction:column}
+.insight-card h3{font-size:18px;line-height:1.12;letter-spacing:-.015em;margin:9px 0 auto}
+.insight-card .date{padding-top:16px}
+
+/* CTA: align content with the same container rhythm as the rest of the homepage. */
+.cta{min-height:390px;display:flex;align-items:center}
+.cta-inner{padding:70px 0}
+.cta h2{max-width:650px;letter-spacing:-.055em;margin:12px 0 16px}
+.cta p{max-width:440px;margin-bottom:25px}
+
+.footer{padding-top:72px}
+
+@media(max-width:1100px){
+  .navlinks{gap:19px}
+  .hero-copy{width:58%}
+  .intro-grid{gap:52px}
+  .practice-layout{grid-template-columns:38% 62%}
+}
+
+@media(max-width:900px){
+  .hero{height:auto;min-height:0}
+  .hero-inner{padding:128px 0 430px;display:block}
+  .hero-copy{width:100%;max-width:680px}
+  .hero:before{inset:auto 0 0!important;height:43%!important;background:linear-gradient(180deg,#fffdfb 0%,rgba(255,253,251,.2) 25%,rgba(255,253,251,0) 55%),var(--law-hero) center 36%/cover no-repeat!important}
+  .promise-grid{grid-template-columns:repeat(2,1fr)}
+  .promise-item+ .promise-item{border-left:0}
+  .promise-item:nth-child(even){border-left:1px solid rgba(41,36,44,.075)}
+  .promise-item:nth-child(n+3){border-top:1px solid rgba(41,36,44,.075)}
+  .intro-grid{grid-template-columns:1fr;gap:40px}
+  .intro-image{height:500px}
+  .practice-layout{grid-template-columns:1fr}
+  .practice-list{border-right:0;border-bottom:1px solid rgba(41,36,44,.07)}
+  .practice-panel{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:600px){
+  .hero-inner{padding:116px 0 330px}
+  .hero .display{font-size:clamp(52px,15vw,66px);line-height:.9}
+  .hero p{font-size:14px;max-width:330px}
+  .hero:before{height:34%!important}
+  .promise-grid{grid-template-columns:1fr}
+  .promise-item{min-height:128px;padding:25px 0!important}
+  .promise-item:nth-child(even){border-left:0}
+  .promise-item:nth-child(n+2){border-top:1px solid rgba(41,36,44,.075)}
+  .intro-image{height:350px;border-radius:17px}
+  .practice-head,.insights-head{align-items:flex-start;gap:18px;flex-direction:column}
+  .practice-layout{border-radius:18px}
+  .practice-panel{grid-template-columns:1fr}
+  .practice-panel-image{min-height:290px}
+  .practice-panel-copy{padding:32px 25px 35px}
+  .statement{padding:88px 0}
+  .statement h2{font-size:clamp(49px,14vw,62px)}
+  .sector{min-height:62px;font-size:28px}
+  .insights-grid{grid-template-columns:1fr}
+  .insight-card .thumb{height:205px}
+  .cta{min-height:360px}
+  .cta-inner{padding:60px 0}
+}
+.section-display{font-size:clamp(46px,6vw,78px);line-height:1;margin:14px 0 0}
+@media(max-width:600px){.section-display{font-size:clamp(42px,12vw,58px)}}
+.practice-panel-image{transition:background-image .35s ease,transform .55s ease;}
+.practice-layout:hover .practice-panel-image{transform:scale(1.012);}
+@media(prefers-reduced-motion:reduce){.practice-panel-image{transition:none}.practice-layout:hover .practice-panel-image{transform:none}}

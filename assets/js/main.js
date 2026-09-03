@@ -36,15 +36,15 @@ document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 const rows = document.querySelectorAll('.practice-row');
 const panel = document.querySelector('.practice-panel');
 const practiceData = {
-  'Corporate & Commercial': ['Practical legal solutions for complex commercial environments.', 'Corporate governance, mergers, acquisitions, joint ventures and commercial contracts.', 'linear-gradient(135deg,#4b3a3c,#c79f8c)'],
-  'Dispute Resolution': ['Strategic representation when the stakes are high.', 'Commercial litigation, arbitration, mediation and contentious regulatory matters.', 'linear-gradient(135deg,#3f3744,#a78ca1)'],
-  'Banking & Finance': ['Clear counsel across sophisticated financial transactions.', 'Finance, secured lending, project finance, restructuring and financial regulation.', 'linear-gradient(135deg,#594248,#d5ad92)'],
-  'Real Estate': ['Advice for assets, developments and investments that matter.', 'Acquisitions, developments, leasing, construction and real estate finance.', 'linear-gradient(135deg,#53615a,#c5d3c7)'],
-  'Employment': ['Practical guidance across the employment lifecycle.', 'Employment contracts, executive matters, workplace disputes and advisory.', 'linear-gradient(135deg,#634d55,#d3a69b)'],
-  'Energy & Infrastructure': ['Counsel for projects that power growth.', 'Project development, infrastructure transactions, concessions and regulatory matters.', 'linear-gradient(135deg,#4c4658,#b9a9cf)'],
-  'Technology & IP': ['Legal thinking for a rapidly changing digital world.', 'Technology transactions, intellectual property, data and digital regulation.', 'linear-gradient(135deg,#4d5960,#b8c9cf)'],
-  'Tax': ['Clear advice where tax and strategy intersect.', 'Tax structuring, transaction support, advisory and disputes.', 'linear-gradient(135deg,#63584a,#d8c7a5)'],
-  'Regulatory': ['Confident navigation through evolving rules.', 'Regulatory strategy, licensing, compliance and government-facing matters.', 'linear-gradient(135deg,#5a4558,#c5a2bc)']
+  'Corporate & Commercial': ['Practical legal solutions for complex commercial environments.', 'Corporate governance, mergers, acquisitions, joint ventures and commercial contracts.', 'https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg'],
+  'Dispute Resolution': ['Strategic representation when the stakes are high.', 'Commercial litigation, arbitration, mediation and contentious regulatory matters.', 'https://images.pexels.com/photos/8112153/pexels-photo-8112153.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-8112153.jpg&fm=jpg'],
+  'Banking & Finance': ['Clear counsel across sophisticated financial transactions.', 'Finance, secured lending, project finance, restructuring and financial regulation.', 'https://images.pexels.com/photos/7841457/pexels-photo-7841457.jpeg?cs=srgb&dl=pexels-rdne-7841457.jpg&fm=jpg'],
+  'Real Estate': ['Advice for assets, developments and investments that matter.', 'Acquisitions, developments, leasing, construction and real estate finance.', 'https://images.pexels.com/photos/8112171/pexels-photo-8112171.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-8112171.jpg&fm=jpg'],
+  'Employment': ['Practical guidance across the employment lifecycle.', 'Employment contracts, executive matters, workplace disputes and advisory.', 'https://images.pexels.com/photos/7841846/pexels-photo-7841846.jpeg?cs=srgb&dl=pexels-rdne-7841846.jpg&fm=jpg'],
+  'Energy & Infrastructure': ['Counsel for projects that power growth.', 'Project development, infrastructure transactions, concessions and regulatory matters.', 'https://images.pexels.com/photos/1593978/pexels-photo-1593978.jpeg?cs=srgb&dl=pexels-pixabay-1593978.jpg&fm=jpg'],
+  'Technology & IP': ['Legal thinking for a rapidly changing digital world.', 'Technology transactions, intellectual property, data and digital regulation.', 'https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?cs=srgb&dl=pexels-sora-shimazaki-5669602.jpg&fm=jpg'],
+  'Tax': ['Clear advice where tax and strategy intersect.', 'Tax structuring, transaction support, advisory and disputes.', 'https://images.pexels.com/photos/8112178/pexels-photo-8112178.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-8112178.jpg&fm=jpg'],
+  'Regulatory': ['Confident navigation through evolving rules.', 'Regulatory strategy, licensing, compliance and government-facing matters.', 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?cs=srgb&dl=pexels-sora-shimazaki-5668858.jpg&fm=jpg']
 };
 
 if (rows.length && panel) {
@@ -60,6 +60,6 @@ if (rows.length && panel) {
     tag.textContent = key;
     title.textContent = data[0];
     desc.textContent = data[1];
-    bg.style.backgroundImage = data[2];
+    bg.style.backgroundImage = `linear-gradient(180deg,rgba(45,32,40,.02),rgba(45,32,40,.12)), url("${data[2]}")`;
   }));
 }
