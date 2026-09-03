@@ -1,32 +1,43 @@
-# Lexora Attorneys — Premium Static Prototype
+# Lexora Attorneys — Premium Static Law Firm Prototype
 
-A hand-coded, multi-page law firm website prototype designed for GitHub Pages, Netlify or any static host.
+A hand-coded, responsive multi-page law firm website prototype built with HTML, CSS and vanilla JavaScript.
 
-## Start locally
-Open `index.html` directly, or use any simple static server.
+## Visual direction
 
-## Structure
-- `index.html` — homepage
-- `firm/` — firm, approach, profile
-- `practice/` — practice landing + detail templates
-- `sectors/` — sector landing + detail templates
-- `people/` — people directory + profile template
-- `insights/` — insight landing + article/update/guide/case-note templates
-- `careers/` — careers
-- `contact/` — enquiry page
-- `assets/css/style.css` — global design system
-- `assets/js/main.js` — navigation, scroll reveal, practice interaction
-- `assets/images/` — prototype hero visual
+The latest iteration shifts the visual language toward a brighter, softer and more charming premium aesthetic:
 
-## Before publishing
-1. Replace Lexora with the actual firm name.
-2. Replace all placeholder copy and people.
-3. Replace example email/phone/address.
-4. Replace `example.com` in `robots.txt` and `sitemap.xml` with the live domain.
-5. Add approved favicon files and real firm photography.
-6. Connect the contact form to a form endpoint or backend.
-7. Add the final Firm Profile PDF.
-8. Add canonical/Open Graph metadata for each production URL.
+- warm ivory / cream foundations
+- blush, peach, lavender, sage and champagne accents
+- rounded editorial containers
+- soft shadows and gentle depth
+- smoother hover and reveal motion
+- richer plum/rose dark sections instead of flat black
+- brighter, warmer imagery treatment
+- pill-shaped calls to action
+- responsive mobile navigation
 
-## Design notes
-The site deliberately avoids generic card-heavy law-firm styling. The visual language uses editorial serif typography, restrained neutrals, champagne accents, cinematic imagery, large negative space, typographic sector navigation and subtle motion.
+The design intentionally stays sophisticated rather than becoming playful or overly decorative.
+
+## Run locally
+
+Open `index.html` in a browser or serve the folder with any static HTTP server.
+
+## Deploy
+
+Upload the contents of this folder to GitHub Pages, Netlify, Cloudflare Pages or another static host.
+
+## Main structure
+
+- `/index.html`
+- `/firm/`
+- `/practice/`
+- `/sectors/`
+- `/people/`
+- `/insights/`
+- `/careers/`
+- `/contact/`
+- `/assets/css/style.css`
+- `/assets/js/main.js`
+- `/assets/images/`
+
+Replace the placeholder firm name, people, contact information, legal copy and example content before production use.
