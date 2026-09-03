@@ -60,7 +60,7 @@ img{max-width:100%}
 .menu-btn{display:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;border-radius:50%;width:44px;height:44px;font-size:19px}
 
 /* HERO */
-.hero{min-height:100vh;background:#47363b url('../images/hero-architecture.svg') center/cover no-repeat;color:#fff;position:relative;display:flex;align-items:flex-end;overflow:hidden}
+.hero{min-height:100vh;background:#47363b url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg') center/cover no-repeat;color:#fff;position:relative;display:flex;align-items:flex-end;overflow:hidden}
 .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,30,39,.76) 0%,rgba(54,39,46,.43) 42%,rgba(255,222,209,.06) 100%),linear-gradient(0deg,rgba(33,24,31,.55),rgba(255,230,220,.08) 58%,rgba(255,255,255,.04));mix-blend-mode:normal}
 .hero:after{content:'';position:absolute;width:430px;height:430px;border-radius:50%;right:-150px;top:90px;background:radial-gradient(circle,rgba(249,194,177,.33),rgba(249,194,177,0) 68%);filter:blur(4px)}
 .hero-inner{position:relative;padding:180px 0 92px;width:min(calc(100% - 96px),var(--max));margin:auto;z-index:2}
@@ -138,7 +138,7 @@ img{max-width:100%}
 
 /* CTA */
 .cta{min-height:510px;display:flex;align-items:center;background:linear-gradient(120deg,#6e4c64,#b16c69 70%,#d88e78);color:#fff;position:relative;overflow:hidden}
-.cta:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(47,34,44,.6),rgba(106,62,72,.22)),url('../images/hero-architecture.svg') center 63%/cover;opacity:.55;mix-blend-mode:soft-light}
+.cta:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(47,34,44,.6),rgba(106,62,72,.22)),url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg') center 63%/cover;opacity:.55;mix-blend-mode:soft-light}
 .cta:after{content:'';position:absolute;width:460px;height:460px;border-radius:50%;right:-160px;top:-100px;background:radial-gradient(circle,rgba(255,239,225,.28),transparent 68%)}
 .cta-inner{position:relative;z-index:2}.cta h2{font-family:var(--serif);font-weight:500;font-size:clamp(54px,7vw,96px);line-height:.9;letter-spacing:-.05em;max-width:800px;margin:15px 0 25px}.cta p{max-width:460px;color:#faeae5}
 
@@ -230,7 +230,7 @@ body{background:var(--paper)}
   background:
     linear-gradient(90deg,#fff8f3 0%,rgba(255,248,243,.46) 18%,rgba(255,248,243,0) 48%),
     linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.16)),
-    url('../images/hero-architecture.svg') center/cover no-repeat;
+    url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg') center/cover no-repeat;
   mix-blend-mode:normal;
 }
 .hero:after{
@@ -319,7 +319,7 @@ body{background:var(--paper)}
 /* Mobile: preserve the calm hierarchy and put the image beneath the copy. */
 @media(max-width:900px){
   .hero{min-height:auto;padding-top:70px}
-  .hero:before{inset:auto 0 0;width:100%;height:42%;background:linear-gradient(180deg,#fff8f3 0%,rgba(255,248,243,.05) 40%),url('../images/hero-architecture.svg') center/cover no-repeat;opacity:.88}
+  .hero:before{inset:auto 0 0;width:100%;height:42%;background:linear-gradient(180deg,#fff8f3 0%,rgba(255,248,243,.05) 40%),url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg') center/cover no-repeat;opacity:.88}
   .hero-inner{padding:125px 0 410px}
   .hero-copy{max-width:650px}
   .intro-image{height:460px}
@@ -350,7 +350,7 @@ body{background:var(--paper)}
   inset:0 0 0 46%;
   background:
     linear-gradient(90deg,#fffdfb 0%,rgba(255,253,251,.88) 7%,rgba(255,253,251,.28) 28%,rgba(255,253,251,0) 52%),
-    url('../images/hero-architecture.svg') center right/cover no-repeat;
+    url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg') center right/cover no-repeat;
 }
 .hero:after{display:none}
 .hero-inner{padding:154px 0 82px}
@@ -368,7 +368,7 @@ body{background:var(--paper)}
 .intro-image img{object-position:center;filter:none}
 
 /* Keep practice imagery visually rich but quiet. */
-.practice-panel-image{background-image:url('../images/hero-architecture.svg')!important;background-size:cover!important;background-position:center!important}
+.practice-panel-image{background-image:url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg')!important;background-size:cover!important;background-position:center!important}
 .practice-panel-image:after{background:linear-gradient(145deg,rgba(255,243,236,.10),rgba(53,40,48,.08))}
 
 /* Remove any remaining decorative/noise feeling from dark statement. */
@@ -379,7 +379,7 @@ body{background:var(--paper)}
   .hero:before{
     inset:auto 0 0;
     width:100%;height:43%;
-    background:linear-gradient(180deg,#fffdfb 0%,rgba(255,253,251,.08) 42%),url('../images/hero-architecture.svg') center/cover no-repeat;
+    background:linear-gradient(180deg,#fffdfb 0%,rgba(255,253,251,.08) 42%),url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg') center/cover no-repeat;
   }
   .hero-inner{padding:125px 0 410px}
   .hero-copy{max-width:650px}
@@ -390,4 +390,76 @@ body{background:var(--paper)}
   .hero .display{font-size:56px}
   .hero:before{height:34%}
   .intro-image{height:380px}
+}
+
+
+/* =========================================================
+   LAW-FIRM PHOTOGRAPHY PASS — high-resolution legal imagery
+   ========================================================= */
+:root{
+  --law-hero:url("https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg");
+  --law-client:url("https://images.pexels.com/photos/8112153/pexels-photo-8112153.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-8112153.jpg&fm=jpg");
+  --law-team:url("https://images.pexels.com/photos/7841457/pexels-photo-7841457.jpeg?cs=srgb&dl=pexels-rdne-7841457.jpg&fm=jpg");
+  --law-review:url("https://images.pexels.com/photos/7841846/pexels-photo-7841846.jpeg?cs=srgb&dl=pexels-rdne-7841846.jpg&fm=jpg");
+  --law-symbol:url("https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?cs=srgb&dl=pexels-sora-shimazaki-5669602.jpg&fm=jpg");
+}
+
+/* Hero: an unmistakable lawyer/client consultation rather than abstract architecture. */
+.hero{background:#fffdfb!important;color:var(--ink)!important}
+.hero:before{
+  content:""!important;
+  position:absolute!important;
+  inset:0 0 0 46%!important;
+  width:auto!important;
+  height:auto!important;
+  background:
+    linear-gradient(90deg,#fffdfb 0%,rgba(255,253,251,.96) 5%,rgba(255,253,251,.35) 23%,rgba(255,253,251,0) 44%),
+    var(--law-hero) center 38%/cover no-repeat!important;
+  opacity:1!important;
+  filter:saturate(.78) contrast(.98) brightness(1.04)!important;
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(84,57,70,.04));
+}
+.hero .container{position:relative;z-index:2}
+
+/* Firm photography */
+.intro-image{background:#eee7e2}
+.intro-image img{width:100%;height:100%;object-fit:cover;object-position:center 42%;filter:saturate(.82) contrast(1.02) brightness(1.02)}
+
+/* Practice image now shows attorneys in discussion, not a repeated illustration. */
+.practice-panel-image{
+  background-image:linear-gradient(180deg,rgba(45,32,40,.02),rgba(45,32,40,.12)),var(--law-team)!important;
+  background-size:cover!important;
+  background-position:center 42%!important;
+  filter:saturate(.82) contrast(1.02);
+}
+
+/* Editorial insight photography */
+.insight-card .thumb{background-color:#e8dfdc!important;background-size:cover!important;background-position:center!important}
+.insight-card .thumb:before{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(50,34,43,.10))!important}
+.insight-card .thumb:after{display:none!important}
+.insight-card .thumb-regulatory{background-image:var(--law-symbol)!important;background-position:center 48%!important}
+.insight-card .thumb-arbitration{background-image:var(--law-team)!important;background-position:center 34%!important}
+.insight-card .thumb-employment{background-image:var(--law-review)!important;background-position:center 42%!important}
+
+/* Keep the CTA sophisticated and legal without repeating the hero. */
+.cta:before{
+  background:linear-gradient(90deg,rgba(47,34,44,.77),rgba(78,49,63,.48)),var(--law-review) center 48%/cover no-repeat!important;
+  opacity:.28!important;
+  mix-blend-mode:multiply!important;
+}
+
+@media(max-width:900px){
+  .hero{padding-bottom:42vh!important}
+  .hero:before{
+    inset:auto 0 0!important;
+    width:100%!important;
+    height:42vh!important;
+    background:linear-gradient(180deg,#fffdfb 0%,rgba(255,253,251,.18) 24%,rgba(255,253,251,0) 55%),var(--law-hero) center 36%/cover no-repeat!important;
+  }
 }

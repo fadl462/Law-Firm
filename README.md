@@ -41,3 +41,7 @@ Upload the contents of this folder to GitHub Pages, Netlify, Cloudflare Pages or
 - `/assets/images/`
 
 Replace the placeholder firm name, people, contact information, legal copy and example content before production use.
+
+
+## Photography
+Homepage imagery now uses high-resolution, law-specific photography sourced from Pexels free stock pages: lawyer/client consultation, attorney strategy meeting, legal document review, and scales of justice. The previous abstract architecture/interior illustration assets were removed.
