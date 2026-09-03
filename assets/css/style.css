@@ -936,3 +936,137 @@ body.has-pointer .cursor-glow{opacity:1}
 
 .page-leaving{opacity:0;transition:opacity .22s ease}
 @media(prefers-reduced-motion:reduce){.page-leaving{opacity:1}}
+
+
+/* =========================================================
+   FINAL HOMEPAGE ART-DIRECTION PASS — LUXURY / FLASHY / PRECISE
+   ========================================================= */
+:root{
+  --flash-shadow:0 30px 80px rgba(63,40,54,.16);
+  --flash-glow:rgba(226,151,137,.22);
+}
+
+/* Header alignment: the glass rail and its contents now share the same grid. */
+.header{padding:14px 0;color:var(--ink);}
+.header:after{left:16px;right:16px;top:6px;height:64px;background:rgba(255,252,250,.78);border-color:rgba(55,43,51,.10);box-shadow:0 12px 38px rgba(55,38,48,.07);backdrop-filter:blur(20px) saturate(130%);-webkit-backdrop-filter:blur(20px) saturate(130%)}
+.header .nav{width:min(calc(100% - 64px),var(--max));min-height:64px;}
+.header:not(.scrolled){padding:14px 0}
+.header:not(.scrolled):after{background:rgba(255,252,250,.78);border-color:rgba(55,43,51,.10)}
+.header.scrolled{padding:9px 0}
+.header.scrolled:after{top:5px;height:58px;background:rgba(48,36,47,.94);border-color:rgba(255,255,255,.13);box-shadow:0 16px 45px rgba(33,22,31,.18)}
+.header .logo{position:relative;z-index:2;flex:0 0 auto}
+.header .navlinks{position:absolute;left:50%;transform:translateX(-50%);gap:28px;white-space:nowrap}
+.header .navlinks a{padding:9px 2px;font-size:11px;letter-spacing:.01em}
+.header .navlinks a:after{height:2px;bottom:2px;width:0}
+.header .navlinks a.is-active:after{width:100%}
+.header:not(.scrolled) .navlinks a{color:#403740}
+.header .btn{min-width:122px;height:42px;padding:10px 17px}
+.header:not(.scrolled) .btn{background:rgba(255,255,255,.55);border-color:rgba(57,43,51,.14);color:var(--ink);box-shadow:0 7px 20px rgba(65,43,55,.06)}
+.header:not(.scrolled) .btn:hover{background:#f0b6a7;border-color:#f0b6a7}
+.header.scrolled .btn{background:transparent;border-color:rgba(255,255,255,.28);color:#fff}
+
+/* Hero: stronger split-screen composition and layered editorial framing. */
+.hero{min-height:94vh;align-items:center;background:
+  radial-gradient(circle at 13% 42%,rgba(238,207,195,.34) 0 17%,transparent 17.2%),
+  radial-gradient(circle at 88% 32%,rgba(226,202,221,.42),transparent 28%),
+  linear-gradient(135deg,#fffdfb 0%,#fff8f3 54%,#f7edf2 100%);}
+.hero:before{inset:0 0 0 45%;background:
+  linear-gradient(90deg,#fff8f3 0%,rgba(255,248,243,.65) 8%,rgba(255,248,243,0) 30%),
+  linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02)),
+  url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg') center 48%/cover no-repeat;
+  clip-path:polygon(8% 0,100% 0,100% 100%,0 100%);}
+.hero:after{width:650px;height:650px;right:-300px;top:-190px;background:radial-gradient(circle,rgba(220,167,155,.24),rgba(220,167,155,0) 68%);border:1px solid rgba(184,137,88,.12);box-shadow:0 0 0 70px rgba(184,137,88,.025),0 0 0 140px rgba(184,137,88,.018);filter:none}
+.hero-inner{width:min(calc(100% - 64px),var(--max));padding:154px 0 74px;}
+.hero-copy{max-width:700px;position:relative;z-index:4}
+.hero-copy:before{left:-22px;top:0;height:96px;width:2px;background:linear-gradient(180deg,var(--rose),transparent)}
+.hero .eyebrow{margin-bottom:22px;color:#9b665f;letter-spacing:.24em}
+.hero .display{font-size:clamp(66px,7.5vw,116px);line-height:.86;letter-spacing:-.065em;max-width:760px}
+.hero .display em{color:#df9589;position:relative}
+.hero .display em:after{content:'';position:absolute;left:4%;right:-3%;bottom:-7px;height:2px;background:linear-gradient(90deg,var(--rose),transparent);opacity:.4;transform:rotate(-2deg)}
+.hero p{max-width:500px;font-size:15px;line-height:1.7;color:#625a61}
+.hero-actions{display:flex;align-items:center;gap:22px;margin-top:31px}
+.hero-actions .btn{box-shadow:0 16px 34px rgba(91,65,79,.18)}
+.hero-text-link{font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#91645d;display:inline-flex;align-items:center;gap:9px}
+.hero-text-link span{font-size:13px;transition:transform .35s var(--ease)}
+.hero-text-link:hover span{transform:translate(4px,-3px)}
+.hero-meta{display:flex;gap:28px;margin-top:30px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#8b7c83}
+.hero-meta span{display:inline-flex;align-items:center;gap:9px}.hero-meta span:before{content:'';width:5px;height:5px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 4px rgba(199,122,114,.08)}
+.hero-visual-label{position:absolute;right:0;bottom:82px;display:flex;flex-direction:column;align-items:flex-end;gap:9px;font-size:8px;letter-spacing:.2em;color:#7c676f;z-index:5}
+.hero-visual-label strong{font-family:var(--serif);font-size:34px;line-height:1;font-weight:500;color:#a97c73}
+.hero-visual-label:before{content:'';position:absolute;right:0;bottom:54px;width:72px;height:1px;background:linear-gradient(90deg,transparent,var(--rose))}
+.scroll{right:0;bottom:26px;color:#84666f;font-size:8px}
+
+/* Add depth to the first fold without clutter. */
+.hero-inner:before{content:'';position:absolute;left:-90px;top:96px;width:320px;height:320px;border:1px solid rgba(184,137,88,.10);border-radius:50%;box-shadow:0 0 0 40px rgba(184,137,88,.018),0 0 0 80px rgba(184,137,88,.012);pointer-events:none}
+.hero-inner:after{content:'LEGAL COUNSEL / BUSINESS IMPACT';position:absolute;right:0;top:104px;font-size:8px;letter-spacing:.25em;color:rgba(94,72,82,.42)}
+
+/* Promise band: more like a luxury service index. */
+.promise{padding:58px 0;background:#fff;position:relative}
+.promise-grid{padding:0}
+.promise-item{padding:18px 34px 20px;min-height:112px}
+.promise-item:first-child{padding-left:0}.promise-item:last-child{padding-right:0}
+.promise-icon{width:40px;height:40px;margin-bottom:13px;font-size:13px}
+.promise-item h3{font-size:10px;margin-bottom:5px}.promise-item p{font-size:10px;line-height:1.55}
+
+/* Content rails: slightly more breathing room and stronger visual anchors. */
+.section{padding:128px 0}
+.intro-grid{grid-template-columns:.78fr 1.22fr;gap:90px}
+.intro-copy h2{font-size:clamp(54px,6.1vw,88px)}
+.intro-image{height:580px;border-radius:30px;box-shadow:var(--flash-shadow);overflow:hidden}
+.intro-image:after{content:'LEXORA / 02';position:absolute;right:18px;bottom:16px;z-index:4;font-size:8px;letter-spacing:.2em;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.3)}
+.intro-image img{filter:brightness(1.04) saturate(.72);transition:transform 1.2s var(--ease),filter .6s ease}
+.intro-image:hover img{transform:scale(1.045);filter:brightness(1.06) saturate(.84)}
+
+.practice-head,.insights-head{margin-bottom:32px}
+.section-display{font-size:clamp(50px,5.5vw,78px);letter-spacing:-.055em}
+.practice-layout{grid-template-columns:.88fr 1.62fr;border-radius:30px;box-shadow:var(--flash-shadow)}
+.practice-row{padding:18px 24px}
+.practice-panel{min-height:530px}
+.practice-panel-image{min-height:100%;}
+.practice-panel-copy{padding:58px}
+.practice-panel-copy h3{font-size:46px}
+
+/* Statement: make it a cinematic interlude. */
+.statement{padding:148px 0;min-height:430px;background:linear-gradient(112deg,#4b3549 0%,#755268 54%,#a46e79 100%)}
+.statement h2{font-size:clamp(66px,8vw,118px)}
+.statement p{margin-top:28px}
+
+/* Sectors become interactive editorial rows. */
+.sectors{padding-top:122px;padding-bottom:126px}
+.sector{padding:20px 0}.sector span{font-size:clamp(25px,3vw,40px)}
+
+/* Insights become sharper, more editorial and more tactile. */
+.insights-grid{gap:24px}
+.insight-card{border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(70,49,61,.07)}
+.insight-card .thumb{height:210px}
+.insight-card-body{padding:24px 24px 27px}
+.insight-card h3{font-size:18px;line-height:1.25}
+
+/* CTA: a more dramatic closing panel. */
+.cta{min-height:540px;background:linear-gradient(120deg,#f8e9e5 0%,#f6eaf1 58%,#eee6f3 100%);color:var(--ink)}
+.cta:before{right:10%;top:4%;width:410px;height:410px;border-color:rgba(184,137,88,.13);box-shadow:0 0 0 55px rgba(184,137,88,.025),0 0 0 110px rgba(184,137,88,.018)}
+.cta-inner{max-width:var(--max)}
+.cta .eyebrow{color:#986860}.cta h2{font-size:clamp(64px,7.4vw,106px);max-width:900px}.cta p{color:#6f6269}.cta .btn{background:var(--plum);border-color:var(--plum);color:#fff}
+
+/* Footer: cleaner, stronger final anchor. */
+.footer{padding-top:82px}.footer-grid{gap:64px}.footer-brand{font-size:38px}
+
+@media(max-width:1100px){
+  .header .nav{width:min(calc(100% - 48px),var(--max))}.header .navlinks{gap:20px}
+  .hero-inner{width:min(calc(100% - 48px),var(--max))}.hero .display{font-size:clamp(60px,7.4vw,96px)}
+  .intro-grid{gap:55px}.practice-panel-copy{padding:42px}.practice-panel-copy h3{font-size:38px}
+}
+@media(max-width:900px){
+  .header:after{left:12px;right:12px}.header .nav{width:min(calc(100% - 36px),var(--max))}.header .navlinks{display:none}
+  .hero{min-height:auto;padding-bottom:0}.hero:before{inset:52% 0 0 0;clip-path:none;background:linear-gradient(180deg,rgba(255,248,243,.1),rgba(255,248,243,0) 16%),url('https://images.pexels.com/photos/7876155/pexels-photo-7876155.jpeg?cs=srgb&dl=pexels-karola-g-7876155.jpg&fm=jpg') center/cover no-repeat}
+  .hero-inner{width:min(calc(100% - 42px),var(--max));padding:145px 0 430px}.hero-copy{max-width:680px}.hero .display{font-size:clamp(58px,11vw,86px)}
+  .hero-visual-label{bottom:34px;right:12px;color:#fff}.hero-visual-label strong{color:#fff}.hero-visual-label:before{background:linear-gradient(90deg,transparent,#fff)}.hero-inner:after{display:none}
+  .intro-grid{grid-template-columns:1fr;gap:45px}.intro-image{height:480px}.practice-layout{grid-template-columns:1fr}.practice-panel{min-height:500px}.practice-list{border-right:0;border-bottom:1px solid var(--line)}
+  .statement{min-height:380px}.cta{min-height:460px}
+}
+@media(max-width:600px){
+  .header:after{top:5px;height:58px;left:10px;right:10px}.header .nav{width:calc(100% - 28px);min-height:58px}.header .logo{font-size:20px}.header .logo small{font-size:7px;margin-top:6px}.header .btn{display:none}.menu-btn{display:grid;place-items:center;width:40px;height:40px}
+  .hero-inner{width:calc(100% - 32px);padding:126px 0 350px}.hero-copy:before{display:none}.hero .eyebrow{font-size:8px;margin-bottom:18px}.hero .display{font-size:clamp(52px,14vw,72px);line-height:.9}.hero p{font-size:13px;max-width:350px}.hero-actions{gap:16px;flex-wrap:wrap}.hero-text-link{font-size:8px}.hero-meta{font-size:7px;gap:16px}.hero-visual-label{font-size:7px;bottom:20px}.hero-visual-label strong{font-size:27px}.scroll{display:none}
+  .promise{padding:36px 0}.promise-grid{grid-template-columns:1fr 1fr}.promise-item{padding:18px 12px!important;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.promise-item:nth-child(2n){border-right:0}.promise-item:nth-last-child(-n+2){border-bottom:0}.promise-icon{width:34px;height:34px;font-size:11px;margin-bottom:10px}.promise-item h3{font-size:8px}.promise-item p{font-size:8px}
+  .section{padding:82px 0}.intro-image{height:340px;border-radius:22px}.section-display{font-size:46px}.practice-head,.insights-head{align-items:flex-start;flex-direction:column;gap:15px}.practice-layout{border-radius:20px}.practice-panel{grid-template-columns:1fr;min-height:0}.practice-panel-image{height:280px}.practice-panel-copy{padding:30px}.practice-panel-copy h3{font-size:34px}.statement{padding:92px 0}.statement h2{font-size:clamp(52px,13vw,72px)}.sectors{padding-top:82px;padding-bottom:88px}.sector span{font-size:23px}.insight-card .thumb{height:170px}.insight-card-body{padding:18px}.insight-card h3{font-size:15px}.cta{min-height:400px}.cta h2{font-size:clamp(52px,13vw,70px)}.footer{padding-top:60px}.footer-grid{gap:34px}
+}

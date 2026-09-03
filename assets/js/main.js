@@ -16,6 +16,13 @@ if (menuBtn && mobile) {
     document.body.classList.toggle('is-locked', open);
     menuBtn.setAttribute('aria-expanded', String(open));
   });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && mobile.classList.contains('open')) {
+      mobile.classList.remove('open');
+      document.body.classList.remove('is-locked');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
   mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     mobile.classList.remove('open');
     document.body.classList.remove('is-locked');
