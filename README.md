@@ -1,47 +1,23 @@
-# Lexora Attorneys — Premium Static Law Firm Prototype
+# Lexora Attorneys — Flashy UI/UX Pass
 
-A hand-coded, responsive multi-page law firm website prototype built with HTML, CSS and vanilla JavaScript.
+Static multi-page law firm website prototype.
 
-## Visual direction
+## Latest pass
+- Premium floating glass navigation with active-page state.
+- Scroll progress indicator.
+- Desktop pointer spotlight.
+- Magnetic CTA/button interactions.
+- Subtle image tilt/parallax on visual panels.
+- Editorial hover states for practice areas, sectors, insights and people.
+- Stronger reveal/stagger motion across pages.
+- Cinematic page-exit transition for internal navigation.
+- Refined hero geometry, section hierarchy and conversion moments.
+- Responsive/mobile-safe motion and reduced-motion support.
 
-The latest iteration shifts the visual language toward a brighter, softer and more charming premium aesthetic:
+## Structure
+- HTML pages for Firm, Practice, Sectors, Insights, People, Careers and Contact.
+- `assets/css/style.css` — global design system and responsive styles.
+- `assets/js/main.js` — navigation, reveals, practice interactions and global motion.
+- `assets/favicon/favicon.svg` — favicon.
 
-- warm ivory / cream foundations
-- blush, peach, lavender, sage and champagne accents
-- rounded editorial containers
-- soft shadows and gentle depth
-- smoother hover and reveal motion
-- richer plum/rose dark sections instead of flat black
-- brighter, warmer imagery treatment
-- pill-shaped calls to action
-- responsive mobile navigation
-
-The design intentionally stays sophisticated rather than becoming playful or overly decorative.
-
-## Run locally
-
-Open `index.html` in a browser or serve the folder with any static HTTP server.
-
-## Deploy
-
-Upload the contents of this folder to GitHub Pages, Netlify, Cloudflare Pages or another static host.
-
-## Main structure
-
-- `/index.html`
-- `/firm/`
-- `/practice/`
-- `/sectors/`
-- `/people/`
-- `/insights/`
-- `/careers/`
-- `/contact/`
-- `/assets/css/style.css`
-- `/assets/js/main.js`
-- `/assets/images/`
-
-Replace the placeholder firm name, people, contact information, legal copy and example content before production use.
-
-
-## Photography
-Homepage imagery now uses high-resolution, law-specific photography sourced from Pexels free stock pages: lawyer/client consultation, attorney strategy meeting, legal document review, and scales of justice. The previous abstract architecture/interior illustration assets were removed.
+Replace placeholder firm details, contact information and imagery before production launch.
