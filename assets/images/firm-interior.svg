@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Warm contemporary law office interior">
+<defs>
+ <linearGradient id="room" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf4"/><stop offset="1" stop-color="#eadbd2"/></linearGradient>
+ <linearGradient id="window" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8efe5"/><stop offset="1" stop-color="#d8e1d8"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#5d4653" flood-opacity=".14"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#room)"/>
+<rect x="670" y="0" width="530" height="650" fill="url(#window)"/>
+<path d="M760 0v650M940 0v650M1120 0v650" stroke="#cfc5ba" stroke-width="9" opacity=".5"/>
+<path d="M670 190h530M670 390h530" stroke="#ddd4c9" stroke-width="7" opacity=".5"/>
+<path d="M0 690H1200V900H0Z" fill="#cbb4a4" opacity=".45"/>
+<g filter="url(#shadow)">
+ <rect x="160" y="455" width="760" height="48" rx="24" fill="#6d5a53"/>
+ <rect x="230" y="500" width="620" height="34" rx="17" fill="#8d7568"/>
+</g>
+<g fill="#55464a"><rect x="245" y="535" width="24" height="230" rx="12"/><rect x="820" y="535" width="24" height="230" rx="12"/></g>
+<g fill="#6f5c55">
+ <path d="M110 625h210l-20 125H130Z"/><path d="M870 625h220l-20 125H890Z"/>
+</g>
+<!-- plants -->
+<g transform="translate(100 160)"><path d="M55 460v-250" stroke="#80664e" stroke-width="16"/><g fill="#a5b79b"><ellipse cx="-15" cy="230" rx="75" ry="32" transform="rotate(-25)"/><ellipse cx="110" cy="180" rx="85" ry="34" transform="rotate(24)"/><ellipse cx="-5" cy="130" rx="78" ry="32" transform="rotate(28)"/><ellipse cx="115" cy="85" rx="82" ry="34" transform="rotate(-25)"/></g><path d="M15 455h80l-12 45H27Z" fill="#c49378"/></g>
+<g transform="translate(1030 120)"><path d="M55 500v-270" stroke="#80664e" stroke-width="16"/><g fill="#b2c0a5"><ellipse cx="-15" cy="260" rx="75" ry="32" transform="rotate(-25)"/><ellipse cx="120" cy="210" rx="85" ry="34" transform="rotate(24)"/><ellipse cx="0" cy="155" rx="78" ry="32" transform="rotate(28)"/><ellipse cx="125" cy="105" rx="82" ry="34" transform="rotate(-25)"/></g><path d="M15 495h80l-12 45H27Z" fill="#c49378"/></g>
+</svg>

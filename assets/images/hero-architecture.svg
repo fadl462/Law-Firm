@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-label="Sunlit contemporary architectural staircase">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf9"/><stop offset=".58" stop-color="#f8f0e9"/><stop offset="1" stop-color="#eadfe5"/></linearGradient>
+  <linearGradient id="wall" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fffdf9"/><stop offset="1" stop-color="#f0e5dc"/></linearGradient>
+  <linearGradient id="step" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffaf2"/><stop offset="1" stop-color="#d7c5b6"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#dfe9e1" stop-opacity=".55"/></linearGradient>
+  <radialGradient id="sun"><stop stop-color="#fff5d9" stop-opacity=".95"/><stop offset="1" stop-color="#fff5d9" stop-opacity="0"/></radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+  <filter id="shadow"><feDropShadow dx="0" dy="20" stdDeviation="28" flood-color="#735d57" flood-opacity=".12"/></filter>
+</defs>
+<rect width="1800" height="1100" fill="url(#bg)"/>
+<ellipse cx="1260" cy="180" rx="470" ry="360" fill="url(#sun)" filter="url(#blur)"/>
+<!-- tall windows -->
+<g opacity=".82">
+ <rect x="1230" y="0" width="570" height="700" fill="url(#glass)"/>
+ <path d="M1340 0v700M1460 0v700M1580 0v700M1700 0v700" stroke="#d8d8ce" stroke-width="10" opacity=".45"/>
+ <path d="M1230 185h570M1230 365h570M1230 545h570" stroke="#e5e1d9" stroke-width="8" opacity=".42"/>
+</g>
+<!-- rear curved wall -->
+<path d="M0 0H1280C1110 205 1090 420 1235 620C1305 718 1360 820 1310 1100H0Z" fill="url(#wall)"/>
+<path d="M1120 0C1015 190 1018 378 1145 555C1220 660 1265 785 1200 1100" fill="none" stroke="#e1d1c5" stroke-width="14" opacity=".75"/>
+<!-- staircase body -->
+<path d="M720 1100L1105 535C1160 455 1260 450 1315 510L1800 1100Z" fill="#eee4da" filter="url(#shadow)"/>
+<!-- steps -->
+<g fill="url(#step)" stroke="#c9b5a6" stroke-width="3">
+ <path d="M715 1080h1085l-48-34H738Z"/><path d="M742 1044h1008l-45-33H765Z"/><path d="M769 1010h957l-43-32H793Z"/>
+ <path d="M797 978h899l-40-31H820Z"/><path d="M824 947h845l-38-30H847Z"/><path d="M851 917h793l-35-29H874Z"/>
+ <path d="M878 888h742l-34-28H900Z"/><path d="M904 860h692l-32-27H927Z"/><path d="M930 833h643l-30-26H952Z"/>
+ <path d="M956 807h595l-28-25H978Z"/><path d="M981 782h550l-26-24H1003Z"/><path d="M1005 758h506l-24-23H1027Z"/>
+ <path d="M1028 735h466l-22-22H1050Z"/><path d="M1050 713h428l-20-21H1071Z"/><path d="M1071 692h390l-18-20H1091Z"/>
+ <path d="M1091 672h352l-16-19H1110Z"/><path d="M1110 653h316l-14-18H1128Z"/><path d="M1128 635h284l-12-17H1145Z"/>
+</g>
+<!-- elegant curved railing -->
+<path d="M1080 690C1210 520 1315 505 1465 570C1545 605 1600 650 1650 720" fill="none" stroke="#b99063" stroke-width="8" opacity=".9"/>
+<path d="M1080 680C1208 510 1318 495 1470 560C1550 595 1605 640 1655 710" fill="none" stroke="#fffaf4" stroke-width="6" opacity=".85"/>
+<!-- tree -->
+<g transform="translate(1520 170)">
+ <path d="M95 530c20-150 15-270 0-390" stroke="#8a735c" stroke-width="22" stroke-linecap="round"/>
+ <path d="M96 280L5 210M98 315l110-80M94 210l55-105" stroke="#8a735c" stroke-width="13" stroke-linecap="round"/>
+ <g fill="#a8b89d" opacity=".78">
+  <circle cx="15" cy="180" r="90"/><circle cx="92" cy="125" r="100"/><circle cx="190" cy="175" r="96"/><circle cx="150" cy="260" r="100"/><circle cx="42" cy="270" r="82"/>
+ </g>
+ <g fill="#c4cfb6" opacity=".48"><circle cx="50" cy="110" r="55"/><circle cx="165" cy="120" r="58"/><circle cx="112" cy="215" r="65"/></g>
+</g>
+<!-- floor -->
+<path d="M0 1030C430 980 820 1010 1200 1060C1420 1090 1600 1095 1800 1075V1100H0Z" fill="#e9ddd4" opacity=".8"/>
+</svg>
